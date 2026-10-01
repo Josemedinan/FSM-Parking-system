@@ -1,0 +1,13 @@
+Estado actual,P1,P0,Tecla,Estado siguiente,P1',P0',Salida (Mealy)
+SIN_TECLAS,0,0,ninguna,SIN_TECLAS,0,0,-
+SIN_TECLAS,0,0,A,PASO_1 (A ok),0,1,-
+SIN_TECLAS,0,0,B,SIN_TECLAS,0,0,ALARMA
+SIN_TECLAS,0,0,C,SIN_TECLAS,0,0,ALARMA
+PASO_1 (A ok),0,1,ninguna,PASO_1 (A ok),0,1,-
+PASO_1 (A ok),0,1,A,PASO_1 (A ok),0,1,-
+PASO_1 (A ok),0,1,B,SIN_TECLAS,0,0,ALARMA
+PASO_1 (A ok),0,1,C,"PASO_2 (A,C ok)",1,0,-
+"PASO_2 (A,C ok)",1,0,ninguna,"PASO_2 (A,C ok)",1,0,-
+"PASO_2 (A,C ok)",1,0,A,SIN_TECLAS,0,0,ALARMA
+"PASO_2 (A,C ok)",1,0,B,SIN_TECLAS,0,0,CODIGO_OK
+"PASO_2 (A,C ok)",1,0,C,"PASO_2 (A,C ok)",1,0,-

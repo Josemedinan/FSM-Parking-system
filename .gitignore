@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.resaved
+vec_*.txt
+*_test.circ
+prev_*.png
